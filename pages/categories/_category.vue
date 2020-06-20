@@ -1,15 +1,19 @@
 <template>
   <article class="container mx-auto lg:px-40 px-10">
     <div v-if="!isLoading">
-      <post-item
-        v-for="(post, key) in posts"
-        :key="key"
-        :title="post.title"
-        :description="post.description"
-        :slug="post.slug"
-        :created-at="post.publishedAt"
-        :category="post.category"
-      />
+      <div class="flex flex-wrap">
+        <post-item
+          v-for="(post, key) in posts"
+          :key="key"
+          :title="post.title"
+          :description="post.description"
+          :slug="post.slug"
+          :created-at="post.publishedAt"
+          :category="post.category"
+          :others="{ thumbnail: post.thumbnail, demo: post.thumbnail, link: post.link}"
+          class="lg:w-1/3 w-full"
+        />
+      </div>
     </div>
     <div v-else >
       loading...
@@ -19,7 +23,7 @@
 
 <script>
 import postItem from '~/components/postItem';
-const requiredPostKey = ['title', 'slug', 'description', 'publishedAt', 'category'];
+const requiredPostKey = ['title', 'slug', 'description', 'publishedAt', 'category', 'openSource', 'link', 'demo', 'thumbnail'];
 const sortKey = 'title';
 const sortDirection = 'desc';
 export default {
