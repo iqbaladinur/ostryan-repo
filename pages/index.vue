@@ -17,16 +17,16 @@
               :slug="post.slug"
               :created-at="post.publishedAt"
               :category="post.category"
-              :others="{ thumbnail: post.thumbnail, demo: post.thumbnail, link: post.link}"
+              :others="{ thumbnail: post.thumbnail, demo: post.demo, link: post.link}"
               class="lg:w-1/3 w-full"
             />
           </div>
           <div class="mt-5 px-4 text-gray-700">
             <button v-if="currentPage > 1" @click="prevArticle" class="shadow bg-navbar px-4 py-1 rounded focus:outline-none">
-              prev
+              Prev
             </button>
             <button v-if="currentPage < totalPages" @click="nextArticle" class="shadow bg-navbar px-4 py-1 rounded focus:outline-none">
-              next
+              Next
             </button>
           </div>
         </div>
@@ -52,7 +52,7 @@ import hero from '~/components/home/hero';
 import headSection from '~/components/headSection';
 const requiredPostKey = ['title', 'slug', 'description', 'publishedAt', 'category', 'openSource', 'link', 'demo', 'thumbnail'];
 const sortKey = 'title';
-const sortDirection = 'desc';
+const sortDirection = 'asc';
 export default {
   name: 'Home',
   head() {

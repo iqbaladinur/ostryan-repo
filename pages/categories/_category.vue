@@ -10,7 +10,7 @@
           :slug="post.slug"
           :created-at="post.publishedAt"
           :category="post.category"
-          :others="{ thumbnail: post.thumbnail, demo: post.thumbnail, link: post.link}"
+          :others="{ thumbnail: post.thumbnail, demo: post.demo, link: post.link}"
           class="lg:w-1/3 w-full"
         />
       </div>

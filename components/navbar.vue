@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded shadow text-gray-700">
+  <div class="rounded lg:shadow-none shadow text-gray-700">
     <nav class="container mx-auto flex items-center justify-between flex-wrap p-2">
       <div>
         <nuxt-link to="/" class="flex items-center flex-shrink-0 pr-3 rounded">
