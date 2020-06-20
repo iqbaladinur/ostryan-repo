@@ -2,6 +2,10 @@
   <div>
     <hero />
     <div class="container mx-auto lg:px-40 px-10">
+      <head-section
+        section-title="Made For Everyone"
+        section-sub-title="We not only make paid products, but also open source it for everyone."
+      />
       <div v-if="!isLoading">
         <div v-if="posts.length > 0">
           <post-item
@@ -36,6 +40,7 @@
 <script>
 import postItem from '~/components/postItem';
 import hero from '~/components/home/hero';
+import headSection from '~/components/headSection';
 const requiredPostKey = ['title', 'slug', 'description', 'publishedAt', 'category'];
 const sortKey = 'title';
 const sortDirection = 'desc';
@@ -48,7 +53,8 @@ export default {
   },
   components: {
     postItem,
-    hero
+    hero,
+    headSection
   },
   async fetch({ store, $content, error }) {
     try {

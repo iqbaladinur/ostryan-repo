@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-navbar rounded-b shadow text-gray-700">
     <nav class="container mx-auto flex items-center justify-between flex-wrap p-2">
       <div>
         <nuxt-link to="/" class="flex items-center flex-shrink-0 pr-3 rounded">
@@ -12,8 +12,8 @@
         </nuxt-link>
       </div>
       <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border border-black" @click="isHide = !isHide">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        <button class="flex items-center px-3 py-2 focus:outline-none" @click="isHide = !isHide">
+          <svg class="fill-current h-5 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button>
       </div>
       <div class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto" :class="{ 'hidden' : isHide}">
@@ -21,7 +21,7 @@
         <div class="text-sm px-2 lg:px-0">
           <nuxt-link
             :to="`/categories`"
-            class="capitalize block mt-3 hover:text-gray-700 lg:inline-block lg:mt-0 mr-4 lg:mb-0 mb-3"
+            class="capitalize block mt-3 hover:text-gray-600 lg:inline-block lg:mt-0 mr-4 lg:mb-0 mb-3"
           >
             Repo Category
           </nuxt-link>
@@ -29,7 +29,7 @@
             v-for="(item, key) in menu"
             :key="key" 
             :to="`/pages/${item.slug}`"
-            class="capitalize block mt-3 hover:text-gray-700 lg:inline-block lg:mt-0 mr-4 lg:mb-0 mb-3"
+            class="capitalize block mt-3 hover:text-gray-600 lg:inline-block lg:mt-0 mr-4 lg:mb-0 mb-3"
           >
             {{ item.navTitle }}
           </nuxt-link>
@@ -62,3 +62,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+.bg-navbar {
+  background: #ffb347;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+</style>
