@@ -1,0 +1,28 @@
+{
+  "name": "bloggy",
+  "version": "1.0.0",
+  "description": "headless blog template with nuxtjs",
+  "author": "Iqbal Adi Nurmansyah",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "serve": "nuxt serve",
+    "generate": "nuxt build && nuxt export",
+    "export": "node command_tools/test.js testing && nuxt build && nuxt export",
+    "create-post": "node command_tools/createPost.js",
+    "create-page": "node command_tools/createPage.js"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.3.2",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/sitemap": "^2.3.2",
+    "nuxt": "^2.13.0",
+    "prism-themes": "^1.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.3.0",
+    "@nuxtjs/tailwindcss": "^2.0.0"
+  }
+}
