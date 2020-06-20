@@ -2,7 +2,7 @@
   <div class="container mx-auto hero-container">
     <div class="hero flex">
       <div class="lg:my-auto lg:ml-10 p-10">
-        <b class="lg:text-4xl md:text:3xl sm:text-3xl text-gray-700">
+        <b class="lg:text-4xl md:text:3xl sm:text-2xl text-2xl text-gray-700">
           Sketch, Build & Grow <br>
           Your Business.
         </b>
