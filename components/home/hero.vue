@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto hero-container">
-    <div class="hero flex">
+    <div class="hero flex bg-navbar">
       <div class="lg:my-auto lg:ml-10 px-10 lg:py-10 pt-16 z-10">
         <b class="lg:text-4xl md:text:4xl sm:text-xl text-3xl text-gray-700">
           Sketch, Build & Grow <br>
@@ -32,9 +32,6 @@ export default {
   & > .hero {
     @apply relative rounded-lg shadow-lg;
     min-height: var(--minheight);
-    background: #ffb347;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     & > .img-bg {
       width: 100%;
       @apply absolute bottom-0 p-5;

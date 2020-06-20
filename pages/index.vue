@@ -21,11 +21,11 @@
               class="lg:w-1/3 w-full"
             />
           </div>
-          <div class="mt-5">
-            <button v-if="currentPage > 1" @click="prevArticle" class="px-4 border border-black focus:outline-none">
+          <div class="mt-5 px-4 text-gray-700">
+            <button v-if="currentPage > 1" @click="prevArticle" class="shadow bg-navbar px-4 py-1 rounded focus:outline-none">
               prev
             </button>
-            <button v-if="currentPage < totalPages" @click="nextArticle" class="px-4 border border-black focus:outline-none">
+            <button v-if="currentPage < totalPages" @click="nextArticle" class="shadow bg-navbar px-4 py-1 rounded focus:outline-none">
               next
             </button>
           </div>
@@ -34,8 +34,13 @@
           You haven't create post.
         </div>
       </div>
-      <div v-else >
-        loading...
+      <div v-else class="flex flex-wrap">
+        <div v-for="(v, k) in 3"
+          :key="k"
+          class="w-full lg:w-1/3 p-4"
+        >
+          <div class="p-2 bg-black bg-opacity-25 h-56 rounded"></div>
+        </div>
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@ category: open source
 openSource: true
 link: https://
 demo: https://
-thumbnail: https://
+thumbnail: https://raw.githubusercontent.com/iqbaladinur/ostryan-repo/master/repo_content/cerpenku.png
 ---
 
 ## hello world from cerpenku

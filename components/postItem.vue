@@ -1,11 +1,11 @@
 <template>
-  <div class="p-2">
-    <div class="shadow rounded-lg">
+  <div class="p-4">
+    <div class="h-full shadow rounded-lg hover:shadow-lg cursor-pointer">
       <div class="h-48">
         <img :src="this.others.thumbnail" class="object-cover rounded-t-lg w-full h-full" :alt="title">
       </div>
       <div class="py-2 px-4">
-        <nuxt-link :to="`/post/${slug}`" class="text-xl hover:text-blue-700">
+        <nuxt-link :to="`/post/${slug}`" class="text-xl hover:text-blue-700 capitalize">
           {{ title }}
         </nuxt-link>
         <p class="text-xs">
