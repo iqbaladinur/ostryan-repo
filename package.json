@@ -1,7 +1,7 @@
 {
-  "name": "bloggy",
+  "name": "ostryan",
   "version": "1.0.0",
-  "description": "headless blog template with nuxtjs",
+  "description": "Collection Repo",
   "author": "Iqbal Adi Nurmansyah",
   "private": true,
   "scripts": {

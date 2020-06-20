@@ -30,7 +30,10 @@ export default {
       { hid: 'twitter:image', name: 'twitter:image', content: `${baseUrl}/icon.png` },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/0ee9a07eaa.js', crossorigin: 'anonymous' }
     ]
   },
   env: {

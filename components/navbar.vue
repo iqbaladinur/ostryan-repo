@@ -2,14 +2,12 @@
   <div class="bg-white">
     <nav class="container mx-auto flex items-center justify-between flex-wrap p-2">
       <div>
-        <nuxt-link to="/" class="flex items-center flex-shrink-0">
+        <nuxt-link to="/" class="flex items-center flex-shrink-0 pr-3 rounded">
           <div class="w-10 h-10 flex">
-            <p class="m-auto text-2xl">
-              &#128211;
-            </p>
+            <img src="/icon.png" class="w-8 m-auto">
           </div>
-          <span class="text-sm font-bold">
-            Bloggy
+          <span class="text-sm font-bold ml-1">
+            {{ title }}
           </span>
         </nuxt-link>
       </div>
@@ -19,31 +17,28 @@
         </button>
       </div>
       <div class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto" :class="{ 'hidden' : isHide}">
-        <div class="text-sm lg:flex-grow px-2 lg:px-10">
+        <div class="flex lg:flex-grow bg-blue-300 items-center w-auto px-2 lg:px-0"></div>
+        <div class="text-sm px-2 lg:px-0">
           <nuxt-link
             :to="`/categories`"
-            class="capitalize block mt-3 hover:text-blue-600 lg:inline-block lg:mt-0 mr-4 lg:mb-0 mb-3 hover:underline"
+            class="capitalize block mt-3 hover:text-gray-700 lg:inline-block lg:mt-0 mr-4 lg:mb-0 mb-3"
           >
-            Categories
+            Repo Category
           </nuxt-link>
           <nuxt-link
             v-for="(item, key) in menu"
             :key="key" 
             :to="`/pages/${item.slug}`"
-            class="capitalize block mt-3 hover:text-blue-600 lg:inline-block lg:mt-0 mr-4 lg:mb-0 mb-3 hover:underline"
+            class="capitalize block mt-3 hover:text-gray-700 lg:inline-block lg:mt-0 mr-4 lg:mb-0 mb-3"
           >
             {{ item.navTitle }}
           </nuxt-link>
-        </div>
-        <div class="flex items-center w-auto px-2 lg:px-0">
-          <div class="w-full">
-            <a
-              href="https://github.com/iqbaladinur/bloggy"
-              class="inline-block w-full text-center text-sm px-4 py-2 leading-none border border-gray-800 hover:bg-black hover:text-white mt-0"
-            >
-              Github
-            </a>
-          </div>
+          <a
+            href="https://github.com/iqbaladinur"
+            class="capitalize block mt-3 text-white lg:inline-block lg:mt-0 lg:mb-0 mb-3 bg-gray-700 flex px-5 lg:py-1 py-2 rounded"
+          >
+            <i class="fa fa-github m-auto"></i>
+          </a>
         </div>
       </div>
     </nav>
@@ -58,8 +53,10 @@ export default {
       return this.$store.getters['menu/getMenu'];
     }
   },
-  data() { 
+  data() {
+    const title = process.env.blogTitle; 
     return {
+      title,
       isHide: true
     }
   },
