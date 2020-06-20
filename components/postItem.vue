@@ -1,22 +1,29 @@
 <template>
-  <div class="py-2 mb-1">
-    <nuxt-link :to="`/post/${slug}`" class="text-xl underline hover:text-blue-700">
-      {{ title }}
-    </nuxt-link>
-    <p class="text-xs">
-      &#128198; {{ formatLocaleDateString(createdAt) }}
-    </p>
-    <div class="text-xs">
-      <nuxt-link
-        :to="`/categories/${encodeURIComponent(category)}`"
-        class="hover:text-blue-300"
-      >
-        &#128194; {{ category }}
-      </nuxt-link>
+  <div class="p-2">
+    <div class="shadow rounded-lg">
+      <div class="h-48">
+        <img :src="this.others.thumbnail" class="object-cover rounded-t-lg w-full h-full" :alt="title">
+      </div>
+      <div class="py-2 px-4">
+        <nuxt-link :to="`/post/${slug}`" class="text-xl hover:text-blue-700">
+          {{ title }}
+        </nuxt-link>
+        <p class="text-xs">
+          &#128198; {{ formatLocaleDateString(createdAt) }}
+        </p>
+        <div class="text-xs">
+          <nuxt-link
+            :to="`/categories/${encodeURIComponent(category)}`"
+            class="hover:text-blue-300"
+          >
+            &#128194; {{ category }}
+          </nuxt-link>
+        </div>
+        <p class="text-sm">
+          {{ description }}
+        </p>
+      </div>
     </div>
-    <p class="text-sm">
-      {{ description }}
-    </p>
   </div>
 </template>
 
@@ -50,6 +57,11 @@ export default {
       type: String,
       default: 'uncategorized',
       required: false
+    },
+    others: {
+      type: Object,
+      default: null,
+      require: true
     }
   },
   methods: {

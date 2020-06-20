@@ -17,6 +17,7 @@
               :slug="post.slug"
               :created-at="post.publishedAt"
               :category="post.category"
+              :others="{ thumbnail: post.thumbnail, demo: post.thumbnail, link: post.link}"
               class="lg:w-1/3 w-full"
             />
           </div>
@@ -44,7 +45,7 @@
 import postItem from '~/components/postItem';
 import hero from '~/components/home/hero';
 import headSection from '~/components/headSection';
-const requiredPostKey = ['title', 'slug', 'description', 'publishedAt', 'category'];
+const requiredPostKey = ['title', 'slug', 'description', 'publishedAt', 'category', 'openSource', 'link', 'demo', 'thumbnail'];
 const sortKey = 'title';
 const sortDirection = 'desc';
 export default {

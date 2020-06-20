@@ -7,7 +7,7 @@ category: open source
 openSource: true
 link: https://
 demo: https://
-thumbnail: https://
+thumbnail: https://raw.githubusercontent.com/iqbaladinur/ostryan-repo/master/repo_content/snappy.png
 ---
 
 ## hello world from snappy
