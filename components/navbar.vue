@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-navbar rounded-b shadow text-gray-700">
+  <div class="rounded shadow text-gray-700">
     <nav class="container mx-auto flex items-center justify-between flex-wrap p-2">
       <div>
         <nuxt-link to="/" class="flex items-center flex-shrink-0 pr-3 rounded">
           <div class="w-10 h-10 flex">
             <img src="/icon.png" class="w-8 m-auto">
           </div>
-          <span class="text-sm font-bold ml-1">
+          <span class="text-sm font-bold ml-1 uppercase">
             {{ title }}
           </span>
         </nuxt-link>

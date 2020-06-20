@@ -4,19 +4,22 @@
     <div class="container mx-auto lg:px-40 px-10">
       <head-section
         section-title="Made For Everyone"
-        section-sub-title="We not only make paid products, but also open source it for everyone."
+        section-sub-title="We not only make paid products, but also open source for everyone."
       />
       <div v-if="!isLoading">
         <div v-if="posts.length > 0">
-          <post-item
-            v-for="(post, key) in posts"
-            :key="key"
-            :title="post.title"
-            :description="post.description"
-            :slug="post.slug"
-            :created-at="post.publishedAt"
-            :category="post.category"
-          />
+          <div class="flex flex-wrap">
+            <post-item
+              v-for="(post, key) in posts"
+              :key="key"
+              :title="post.title"
+              :description="post.description"
+              :slug="post.slug"
+              :created-at="post.publishedAt"
+              :category="post.category"
+              class="lg:w-1/3 w-full"
+            />
+          </div>
           <div class="mt-5">
             <button v-if="currentPage > 1" @click="prevArticle" class="px-4 border border-black focus:outline-none">
               prev

@@ -9,7 +9,11 @@ function createPost(title, locationFolder) {
                      + 'description: Post description here.\n'
                      + `author: ${packagejson.author}\n`
                      + `publishedAt: ${new Date().toISOString()}\n`
-                     + 'category: uncategorized\n'
+                     + 'category: open source\n'
+                     + 'openSource: true\n'
+                     + 'link: https://\n'
+                     + 'demo: https://\n'
+                     + 'thumbnail: https://\n'
                      + '---\n'
                      + `\n## hello world from ${title.replace(/-/g, " ")}`;
   if (title) {
