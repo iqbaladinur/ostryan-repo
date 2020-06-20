@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto hero-container">
     <div class="hero flex">
-      <div class="lg:my-auto lg:ml-10 p-10">
-        <b class="lg:text-4xl md:text:3xl sm:text-2xl text-3xl text-gray-700">
+      <div class="lg:my-auto lg:ml-10 px-10 lg:py-10 pt-15">
+        <b class="lg:text-4xl md:text:4xl sm:text-xl text-3xl text-gray-700">
           Sketch, Build & Grow <br>
           Your Business.
         </b>
