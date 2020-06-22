@@ -51,8 +51,8 @@ import postItem from '~/components/postItem';
 import hero from '~/components/home/hero';
 import headSection from '~/components/headSection';
 const requiredPostKey = ['title', 'slug', 'description', 'publishedAt', 'category', 'openSource', 'link', 'demo', 'thumbnail'];
-const sortKey = 'title';
-const sortDirection = 'asc';
+const sortKey = 'publishedAt';
+const sortDirection = 'desc';
 export default {
   name: 'Home',
   head() {
