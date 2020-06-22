@@ -1,6 +1,8 @@
 <template>
   <div class="container mx-auto lg:px-40 px-10">
-    <h1 class="text-3xl font-bold">
+    <img :src="content.thumbnail" class="object-cover lg:h-64 h-auto w-full rounded shadow" alt="image">
+    <br>
+    <h1 class="text-3xl font-bold capitalize">
       {{ content.title }}
     </h1>
     <h2 class="text-xs">

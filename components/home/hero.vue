@@ -9,18 +9,23 @@
         <p class="text-gray-800">
           Digitalize your business with our one stop solution.
         </p>
-        <a href="" class="px-4 py-2 inline-block rounded text-white bg-blue-500 mt-5 shadow-lg hover:bg-blue-600">
+        <a :href="`mailto:${email}`" class="px-4 py-2 inline-block rounded text-white bg-blue-500 mt-5 shadow-lg hover:bg-blue-600">
           Get Close
         </a>
       </div>
-      <img src="~assets/bg.png" class="img-bg">
+      <img src="~assets/bg.png" class="img-bg" loading="lazy" alt="ostryan hero image">
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Hero'
+  name: 'Hero',
+  data() {
+    return {
+      email: process.env.email
+    }
+  }
 }
 </script>
 

@@ -4,7 +4,7 @@
     <div class="main-body">
       <nuxt />
     </div>
-    <div class="flex h-5">
+    <div class="flex h-5 mb-1">
       <a href="#" class="m-auto">
         [&#9650;]
       </a>

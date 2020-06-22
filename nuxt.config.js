@@ -40,7 +40,8 @@ export default {
     baseUrl,
     blogTitle: process.env.BLOG_TITLE,
     blogDesc: process.env.BLOG_DESC,
-    perPage: Number(process.env.POST_PAGINATION_PERPAGE || 10)
+    perPage: Number(process.env.POST_PAGINATION_PERPAGE || 10),
+    email: 'iqbaladinur@gmail.com'
   },
   /*
   ** Customize the progress-bar color

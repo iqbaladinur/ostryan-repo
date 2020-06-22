@@ -9,5 +9,5 @@ link: https://github.com/iqbaladinur/bulmin
 demo: https://bulmin.netlify.app
 thumbnail: https://raw.githubusercontent.com/iqbaladinur/ostryan-repo/master/repo_content/bulmin.png
 ---
-
-## hello world from bulmin
+<br>
+Bulmin is free admin template based on bulma.

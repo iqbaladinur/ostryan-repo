@@ -7,7 +7,8 @@ category: open source
 openSource: true
 link: https://github.com/iqbaladinur/dinojump
 demo: https://stoic-newton-226770.netlify.app/demo/dinojump/
-thumbnail: https://raw.githubusercontent.com/iqbaladinur/ostryan-repo/master/repo_content/dino-jump.png
+thumbnail: https://raw.githubusercontent.com/iqbaladinur/ostryan-repo/master/repo_content/dino.png
 ---
-
-## hello world from dino jump
+<br>
+Game dinosaurus
+<iframe src="https://stoic-newton-226770.netlify.app/demo/dinojump/" class="w-full h-64 mb-10"></iframe>

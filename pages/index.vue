@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-40">
     <hero />
     <div class="container mx-auto lg:px-40 px-10">
       <head-section
@@ -42,6 +42,16 @@
           <div class="p-2 bg-black bg-opacity-25 h-56 rounded"></div>
         </div>
       </div>
+      <head-section
+        section-title="Services"
+        section-sub-title="Deliver best product for supporting your business."
+      />
+      <services />
+      <head-section
+        section-title="We are Bunch of Geeks"
+        section-sub-title="We love to solve problem with code."
+      />
+      <teams />
     </div>
   </div>
 </template>
@@ -50,6 +60,8 @@
 import postItem from '~/components/postItem';
 import hero from '~/components/home/hero';
 import headSection from '~/components/headSection';
+import services from '~/components/home/services';
+import teams from '~/components/home/teams';
 const requiredPostKey = ['title', 'slug', 'description', 'publishedAt', 'category', 'openSource', 'link', 'demo', 'thumbnail'];
 const sortKey = 'publishedAt';
 const sortDirection = 'desc';
@@ -63,7 +75,9 @@ export default {
   components: {
     postItem,
     hero,
-    headSection
+    headSection,
+    services,
+    teams
   },
   async fetch({ store, $content, error }) {
     try {
