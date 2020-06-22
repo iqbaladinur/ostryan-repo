@@ -1,7 +1,7 @@
 <template>
   <div class="p-4">
     <div class="h-full shadow rounded-lg hover:shadow-lg cursor-pointer">
-      <div class="h-48 bg-navbar rounded-lg">
+      <div class="h-48 bg-navbar rounded-t-lg">
         <img :src="others.thumbnail" class="shadow object-cover rounded-t-lg w-full h-full" :alt="title">
       </div>
       <div class="py-2 px-4">

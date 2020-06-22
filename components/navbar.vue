@@ -23,7 +23,7 @@
             :to="`/categories`"
             class="capitalize block mt-3 hover:text-gray-600 lg:inline-block lg:mt-0 mr-4 lg:mb-0 mb-3"
           >
-            Repo Category
+            Projects
           </nuxt-link>
           <nuxt-link
             v-for="(item, key) in menu"
