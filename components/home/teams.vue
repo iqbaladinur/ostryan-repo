@@ -5,16 +5,16 @@
       :key="key"
       class="lg:w-1/3 w-full card"
     >
-      <div class="p-4">
-        <div class="h-full shadow rounded-lg hover:shadow-lg cursor-pointer">
-          <div class="h-40 bg-blue-500 rounded-t-lg flex">
+      <div class="p-4 text-gray-400">
+        <div class="h-full bg-gray-700 shadow rounded-lg hover:shadow-lg cursor-pointer">
+          <div class="h-40 rounded-t-lg flex">
             <img :src="person.img" class="object-cover h-24 w-24 m-auto rounded-full shadow" :alt="person.name" loading="lazy">
           </div>
-          <div class="p-2 bg-white rounded-b-lg">
-            <h1 class="text-lg text-gray-700 text-center">
+          <div class="p-2 rounded-b-lg">
+            <h1 class="text-lg text-center">
               {{ person.name }}
             </h1>
-            <p class="text-center text-sm text-gray-600">
+            <p class="text-center text-sm">
               {{ person.position }}
             </p>
             <div class="flex py-4">

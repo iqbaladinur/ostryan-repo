@@ -74,7 +74,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa',
     '@nuxt/content',
     '@nuxtjs/sitemap',
   ],
