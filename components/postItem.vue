@@ -2,7 +2,7 @@
   <div class="p-4">
     <div class="h-full shadow rounded-lg hover:shadow-lg cursor-pointer">
       <div class="h-48 bg-navbar rounded-t-lg">
-        <img :src="others.thumbnail" class="shadow object-cover rounded-t-lg w-full h-full" :alt="title">
+        <img :src="others.thumbnail" class="shadow object-cover rounded-t-lg w-full h-full" :alt="title" loading="lazy">
       </div>
       <div class="py-2 px-4">
         <nuxt-link :to="`/post/${slug}`" class="text-xl hover:text-blue-700 capitalize">

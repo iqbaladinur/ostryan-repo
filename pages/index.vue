@@ -3,6 +3,11 @@
     <hero />
     <div class="container mx-auto lg:px-40 px-10">
       <head-section
+        section-title="Services"
+        section-sub-title="Deliver best product for supporting your business."
+      />
+      <services />
+      <head-section
         section-title="Made For Everyone"
         section-sub-title="We not only make paid products, but also open source for everyone."
       />
@@ -42,11 +47,6 @@
           <div class="p-2 bg-black bg-opacity-25 h-56 rounded"></div>
         </div>
       </div>
-      <head-section
-        section-title="Services"
-        section-sub-title="Deliver best product for supporting your business."
-      />
-      <services />
       <head-section
         section-title="We are Bunch of Geeks"
         section-sub-title="We love to solve problem with code."
