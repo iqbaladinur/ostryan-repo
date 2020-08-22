@@ -5,8 +5,8 @@
       :key="key"
       class="lg:w-1/3 w-full card"
     >
-      <div class="p-4 text-gray-400">
-        <div class="h-full bg-gray-700 shadow rounded-lg hover:shadow-lg cursor-pointer">
+      <div class="p-4 text-gray-700">
+        <div class="h-full shadow rounded-lg hover:shadow-lg cursor-pointer">
           <div class="h-40 rounded-t-lg flex">
             <img :src="person.img" class="object-cover h-24 w-24 m-auto rounded-full shadow" :alt="person.name" loading="lazy">
           </div>

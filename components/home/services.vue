@@ -7,7 +7,7 @@
     >
       <div class="p-4">
         <div class="h-full shadow rounded-lg hover:shadow-lg cursor-pointer">
-          <div class="h-48 bg-navbar rounded-t-lg flex">
+          <div class="h-48 rounded-t-lg flex">
             <img :src="service.img" class="object-cover w-2/3 h-auto m-auto" :alt="service.title" loading="lazy">
           </div>
           <div class="p-2 bg-white rounded-b-lg">
@@ -46,7 +46,7 @@ export default {
           button: 'Create me a Website'
         },
         {
-          title: 'WebApp / Mobile App',
+          title: 'Mobile App',
           img: appImage,
           desc: 'Need high portability solution to solve your problem? we provide mobile app creation.',
           button: 'Create me a Mobile App'
