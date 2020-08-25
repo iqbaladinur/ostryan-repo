@@ -4,10 +4,10 @@
       <div class="lg:my-auto lg:ml-10 px-10 lg:py-10 pt-16 z-10">
         <b class="lg:text-4xl md:text:4xl sm:text-xl text-3xl text-gray-700">
           Sketch, Build & Grow <br>
-          Your Business.
+          Your Ideas.
         </b>
         <p class="text-gray-800">
-          Digitalize your business with our one stop solution.
+          Digitalize your ideas with our one stop solution.
         </p>
         <a :href="`mailto:${email}`" class="px-4 py-2 inline-block rounded text-white bg-blue-500 mt-5 shadow-lg hover:bg-blue-600">
           Get Close
